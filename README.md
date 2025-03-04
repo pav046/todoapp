@@ -39,7 +39,7 @@ Todo App — это веб-приложение для управления сп
 ```sh
 # Клонируем репозиторий
 git clone https://github.com/pav046/todoapp
-cd todo-app
+cd todoapp
 
 # Устанавливаем зависимости
 npm install
@@ -72,7 +72,7 @@ python manage.py runserver
 ```sh
 # Клонируем репозиторий
 git clone https://github.com/pav046/todoapp
-cd todo-app
+cd todoapp
 
 # Запускаем контейнеры
 docker-compose up --build
