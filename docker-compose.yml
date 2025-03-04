@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: django_react_dev
+    ports:
+      - "8000:8000"  # Прокси порт на сервер
+    volumes:
+      - .:/app   # Синхронизирует код между контейнером и хостом
+      - db_data:/app/db  # Монтирует том в директорию для базы данных
+    environment:
+      - DEBUG=True
+      - ALLOWED_HOSTS=*
+
+volumes:
+  db_data:  # Описание тома для хранения базы данных SQLite
